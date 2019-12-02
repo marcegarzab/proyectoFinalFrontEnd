@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home | Did You Know?</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="homeTitle">Did You Know?</h1>
+            <nav>
+              <ul id="menu">
+                <li id="home" class="selected">Home</li>
+                <li id="dashboard">Dashboard</li>
+                <li id="logout">Logout</li>
+              </ul>
+            </nav>
+        </header>
+        <body>
+            <section id="homeSection">
+                <div class="input_wrap">
+                  <input id="searchUser" type="text" placeholder="search by user...">
+                </div>
+                <div align="center">
+                    <button class="showModifyButton">Modify Post</button>
+                    <div id="modDiv" class="hidden">
+                        <br>
+                        <textarea id="modQuestion" placeholder="Write question here..."></textarea>
+                        <textarea id="modAnswer" placeholder="Write answer here..."></textarea>
+                        <br>
+                        <button id="modifyButton">Confirm</button>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <button id="deleteButton">Delete Post</button>
+                </div>
+                <div class="posts">
+                </div>
+            </section>
+
+            <section id="dashboardSection" class="hidden">
+                <h1>Welcome back!</h1> <!--aqui poner el nombre de del usuario-->
+                
+                <div id="add">
+                    <button id="showPostButton">Add new post</button>
+                    <br>
+                    <div id="areaForPost" class="hidden">
+                        <br>
+                        <br>
+                        <textarea id="newQuestion" placeholder="Write question here..."></textarea>
+                        <textarea id="newAnswer" placeholder="Write answer here..."></textarea>
+                        <br>
+                        <br>
+                        <br>
+                        <button id="addPostButton">Add Post</button>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+                <!--display all posts that user has-->
+                <div class="userPosts">
+<!--                     <div class="userPost">
+                        <input type="radio" name="radios">
+                        <p class="question">This is where the QUESTION goes</p>
+                        <textarea class="newQuestion hidden" placeholder="Write new question here..."></textarea>
+                        <p class="answer">This is where the ANSWER goes</p>
+                        <textarea class="hidden newAnswer" placeholder="Write new answer here..."></textarea>
+                    </div> -->
+                </div>
+            </section>
+            <script type="text/javascript" src="./js/lib/jquery.js" ></script>
+            <script src="./js/home.js" type="text/javascript"></script>
+        </body>
+    </body>
+</html>
