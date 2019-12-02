@@ -240,10 +240,10 @@ $('#logout').on('click', function(){
     data: token,
     success: function(data){
       alert("Logout successful!");
-      window.location = './login.html'
+      window.location = './index.html'
     },
     error: function(error_msg) {
-      window.location = './login.html'
+      window.location = './index.html'
       //alert((error_msg['responseText']));
     }
   });
